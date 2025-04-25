@@ -3249,9 +3249,283 @@ main {
 }
 
 }
+/* Media Query PHONE (ZTE BLADE A31 LITE / SMALL SCREEN)*/
+@media screen and (max-width: 480px) and (max-height:960px){
+  /* body::before {
+     content: "SMALL SCREEN ACTIVO";
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+     font-weight: bolder;
+     z-index: 99999;
+     font-size: 10px;
+   }*/
+ 
+   header nav ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     background-color: rgb(5, 116, 29);
+   }
+   li::after {
+     content: "";
+     margin-left: 1vw;
+   }
+   li::before {
+     content: " | ";
+     margin-left: 1vw;
+   }
+   main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10%;
+   }
+ 
+   .img-jean {
+     width: 70vw;
+     border-radius: 20%;
+     
+   }
+ 
+   .image-jean {
+     grid-column: 2/3;
+     grid-row: 1/2;
+     position: absolute;
+     z-index: 99;
+     margin-top: 8vh;
+   }
+   .welcome {
+     background-color: rgb(36, 36, 36);
+     width: 100%;
+     height: 55vh;
+     margin-top:-11vh;
+     padding-top: 18vh;
+     padding-bottom: 1vh;
+     
+   }
+   .hello {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+     grid-template-rows: auto auto auto; /* Tres filas automáticas */
+     align-items: center;
+     justify-items: center;
+     position: relative;
+     margin-top: -2vh;
+   }
+   .text-hello {
+     grid-row: 2/2;
+     grid-column: 2/3;
+     font-weight: bold;
+     font-size: 1.19vh;
+     color: rgb(255, 255, 255);
+     text-transform: uppercase;
+     position: inherit;
+     z-index: 999;
+     margin-top: 6vh;
+   }
+   .projects {
+     width: 100%;
+     background-color: rgb(204, 204, 204);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     flex-direction: column;
+     margin: 0 auto;
+   }
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 3vw 1fr;
+    margin: 0 auto;
+    margin-left: 0vh;
+  }
+ 
+   .center {
+    
+     margin-top: 3vh;
+     padding-bottom: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-items: center;
+     flex-direction: column;
+     margin-left: -5vh;
+   }
+   .title-projects{
+     margin-top: 5vh;
+     color: rgb(0, 0, 0);
+     font-size: 4.8vw;
+     font-style: italic;
+     text-align: center;
+     margin-left: 0.5vh;
+     
+   }
+   .line-1 {
+     width: 100%;
+     height: 0.2vw;
+     background-color: black;
+     margin-top: 0.3vh;
+   }
+ 
+   .center {
+     width: 65%;
+     margin-top: 5vh;
+     padding-bottom: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+   }
+ 
+   .titles {
+     color: white;
+     font-family: monospace;
+     font-size: 1.5vh;
+   }
+   .hover {
+     background-color: black;
+     grid-column: 1/2;
+     grid-row: 1/2;
+     position: relative;
+     border-radius: var(--boder-img);
+     opacity: 0%;
+     height: 9.2vh;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: monospace;
+     font-size: 1.5vh;
+     transition: 2s;
+   }
+ 
+ .hover-2 {
+   background-color: black;
+   grid-column: 3/4;
+   grid-row: 1/2;
+   position: relative;
+   border-radius: var(--boder-img);
+   opacity: 0;
+   height: 9.2vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   font-size: 1.5vh;
+   transition: 2s;
+ }
+ 
+ .hover-3 {
+   background-color: black;
+   grid-column: 5/6;
+   grid-row: 1/2;
+   position: relative;
+   border-radius: var(--boder-img);
+   opacity: 0;
+   height: 9.2vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   font-size: 1.5vh;
+   transition: 2s;
+ }
+ .hover-4 {
+   background-color: black;
+   grid-column: 1/2;
+   grid-row: 3/4;
+   position: relative;
+   border-radius: var(--boder-img);
+   opacity: 0;
+   height: 9.2vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   font-size: 1.5vh;
+   transition: 2s;
+ }
+ .hover-5 {
+   background-color: black;
+   grid-column: 3/4;
+   grid-row: 3/4;
+   position: relative;
+   border-radius: var(--boder-img);
+   opacity: 0;
+   height: 9.2vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   font-size: 1.5vh;
+   transition: 2s;
+ }
+ .hover-6 {
+   background-color: black;
+   grid-column: 5/6;
+   grid-row: 3/4;
+   position: relative;
+   border-radius: var(--boder-img);
+   opacity: 0;
+   height: 9.2vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: monospace;
+   font-size: 1.5vh;
+   transition: 2s;
+ }
+ .title-contact {
+   color: rgb(238, 238, 238);
+   font-weight: bolder;
+   font-size: 8.5vw;
+   font-style: italic;
+   margin-left: 0.5vh;
+ }
+ .coffe {
+   color: rgb(238, 238, 238);
+   font-weight: 500;
+   font-size: 4.5vw;
+   font-style: italic;
+   margin-left: 0.5vh;
+ }
+ .social-text {
+   color: white;
+   font-style: italic;
+   font-size: 3vw;
+ }
+ .foot-text {
+   font-style: italic;
+   font-size: 1.7vh;
+   margin-left: 0.5vh;
+   
+ }
+ .contact {
+   background-color: green;
+   width: 100%;
+   height: 40vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ 
+ }
 /* Media Query PHONE (IPHONE 14 PRO MAX)*/
 @media screen and (max-width: 430px) and (max-height:932px){
-  body::before {
+ /* body::before {
     content: "IPHONE XR ACTIVO";
     position: fixed;
     top: 0;
@@ -3261,7 +3535,7 @@ main {
     font-weight: bolder;
     z-index: 99999;
     font-size: 10px;
-  }
+  }*/
 
   header nav ul {
     display: flex;
@@ -3518,7 +3792,7 @@ main {
 }
 /* Media Query PHONE (IPHONE XR)*/
 @media screen and (max-width: 414px) and (max-height:896px){
-  body::before {
+ /* body::before {
     content: "IPHONE XR ACTIVO";
     position: fixed;
     top: 0;
@@ -3528,7 +3802,7 @@ main {
     font-weight: bolder;
     z-index: 99999;
     font-size: 10px;
-  }
+  }*/
 
   header nav ul {
     display: flex;
@@ -3785,7 +4059,7 @@ main {
 }
 /* Media Query PHONE (PIXEL 7)*/
 @media screen and (max-width: 412px) and (max-height:915px){
-  body::before {
+  /*body::before {
     content: "PIXEL 7 ACTIVO";
     position: fixed;
     top: 0;
@@ -3795,7 +4069,7 @@ main {
     font-weight: bolder;
     z-index: 99999;
     font-size: 10px;
-  }
+  }*/
 
   header nav ul {
     display: flex;
@@ -4054,7 +4328,7 @@ main {
 
 /* Media Query PHONE (IPHONE 12 PRO)*/
 @media screen and (max-width: 390px) and (max-height:844px){
-  body::before {
+ /* body::before {
     content: "IPHONE 12 PRO ACTIVO";
     position: fixed;
     top: 0;
@@ -4064,7 +4338,7 @@ main {
     font-weight: bolder;
     z-index: 99999;
     font-size: 10px;
-  }
+  } */
 
   header nav ul {
     display: flex;
@@ -4322,7 +4596,7 @@ main {
 
 /* Media Query PHONE (IPHONE SE)*/
 @media screen and (max-width: 375px) and (max-height:667px){
-  body::before {
+  /*body::before {
     content: "IPHONE SE ACTIVO";
     position: fixed;
     top: 0;
@@ -4332,7 +4606,7 @@ main {
     font-weight: bolder;
     z-index: 99999;
     font-size: 10px;
-  }
+  } */
 
   header nav ul {
     display: flex;
@@ -4589,7 +4863,7 @@ main {
 }
 /* Media Query PHONE (SAMSUNG GALAXY S8+)*/
 @media screen and (max-width: 360px) and (max-height:740px){
-  body::before {
+ /* body::before {
     content: "GALAXY S8+ SE ACTIVO";
     position: fixed;
     top: 0;
@@ -4599,7 +4873,7 @@ main {
     font-weight: bolder;
     z-index: 99999;
     font-size: 10px;
-  }
+  }*/
 
   header nav ul {
     display: flex;
@@ -4653,7 +4927,8 @@ main {
     justify-items: center;
     position: relative;
     margin-top: -2vh;
-  }
+  } 
+  
   .text-hello {
     grid-row: 2/2;
     grid-column: 2/3;
